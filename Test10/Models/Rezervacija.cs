@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,5 +19,8 @@ namespace Test10.Models
         public ApplicationUser Upravitelj { get; set; }
         public ApplicationUser Igrac { get; set; }
         public Teren Teren { get; set; }
-    }
+
+    [NotMapped]
+    public string RecurrenceRule { get; set; }
+  }
 }

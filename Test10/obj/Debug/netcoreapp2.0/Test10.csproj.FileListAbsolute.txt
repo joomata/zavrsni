@@ -22,3 +22,15 @@ C:\Users\Mataić\Desktop\Test10\Test10\obj\Debug\netcoreapp2.0\Test10.AssemblyIn
 C:\Users\Mataić\Desktop\Test10\Test10\obj\Debug\netcoreapp2.0\Test10.AssemblyInfo.cs
 C:\Users\Mataić\Desktop\Test10\Test10\obj\Debug\netcoreapp2.0\Test10.dll
 C:\Users\Mataić\Desktop\Test10\Test10\obj\Debug\netcoreapp2.0\Test10.pdb
+D:\Temp\zavrsni\Test10\obj\Debug\netcoreapp2.0\Test10.dll
+D:\Temp\zavrsni\Test10\obj\Debug\netcoreapp2.0\Test10.pdb
+D:\Temp\zavrsni\Test10\bin\Debug\netcoreapp2.0\Test10.deps.json
+D:\Temp\zavrsni\Test10\bin\Debug\netcoreapp2.0\Test10.runtimeconfig.json
+D:\Temp\zavrsni\Test10\bin\Debug\netcoreapp2.0\Test10.runtimeconfig.dev.json
+D:\Temp\zavrsni\Test10\bin\Debug\netcoreapp2.0\Test10.dll
+D:\Temp\zavrsni\Test10\bin\Debug\netcoreapp2.0\Test10.pdb
+D:\Temp\zavrsni\Test10\obj\Debug\netcoreapp2.0\Test10.csprojAssemblyReference.cache
+D:\Temp\zavrsni\Test10\obj\Debug\netcoreapp2.0\Test10.csproj.CoreCompileInputs.cache
+D:\Temp\zavrsni\Test10\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\Temp\zavrsni\Test10\obj\Debug\netcoreapp2.0\Test10.AssemblyInfoInputs.cache
+D:\Temp\zavrsni\Test10\obj\Debug\netcoreapp2.0\Test10.AssemblyInfo.cs

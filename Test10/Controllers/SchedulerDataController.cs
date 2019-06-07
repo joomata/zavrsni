@@ -31,7 +31,10 @@ namespace Test10.Models.Controllers
                 i.Kraj,
                 i.TerenId,
                 i.UpraviteljId,
-                i.IgracId
+                i.IgracId,
+              recurrenceRule = "",
+              Teren = "High"
+
             });
             return Json(DataSourceLoader.Load(rezervacija, loadOptions));
         }
