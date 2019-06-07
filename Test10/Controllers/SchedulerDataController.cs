@@ -22,17 +22,19 @@ namespace Test10.Models.Controllers
         }
 
     [HttpGet]
-    public IActionResult Tereni()
+    public IActionResult Tereni(int klub)
     {
-      var tereni = _context.Teren.Select(t => new { t.IdTeren, t.NazivTerena }).ToList();
+      var tereni = _context.Teren.Where(t => t.TeniskiKlubId == klub).Select(t => new { t.IdTeren, t.NazivTerena }).ToList();
       return Ok(tereni);
     }
 
         [HttpGet]
-        public IActionResult Get(DataSourceLoadOptions loadOptions) {
+        public IActionResult Get(DataSourceLoadOptions loadOptions, int klub) {
             // var tereni = _context.Teren.Where(i => i.TeniskiKlubId == id).Select(i =>i.IdTeren).ToList();
             //  var rezervacija = _context.Rezervacija.Where(i=>tereni.Contains(i.TerenId)).Select(i => new {
-            var rezervacija = _context.Rezervacija.Select(i => new {
+            var rezervacija = _context.Rezervacija
+              .Where(i => i.Teren.TeniskiKlubId == klub)
+              .Select(i => new {
                 i.IdRezervacija,
                 i.DatumVrijeme,
                 i.Kraj,

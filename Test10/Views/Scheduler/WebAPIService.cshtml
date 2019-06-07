@@ -12,6 +12,7 @@
                 .Controller("SchedulerData")
                 .Area("api")
                 .LoadAction("Get")
+                .LoadParams(new { klub = 9 })
                 .InsertAction("Post")
                 .UpdateAction("Put")
                 .DeleteAction("Delete")
@@ -56,7 +57,8 @@
               .DataSource(ds => ds.Mvc()
                 .Controller("SchedulerData")
                 .Area("api")
-                .LoadAction("Tereni")                
+                .LoadAction("Tereni")
+                .LoadParams(new { klub = 9 })
                 );
             })
             .Height(580)
