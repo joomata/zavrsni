@@ -21,6 +21,13 @@ namespace Test10.Models.Controllers
             this._context = context;
         }
 
+    [HttpGet]
+    public IActionResult Tereni()
+    {
+      var tereni = _context.Teren.Select(t => new { t.IdTeren, t.NazivTerena }).ToList();
+      return Ok(tereni);
+    }
+
         [HttpGet]
         public IActionResult Get(DataSourceLoadOptions loadOptions) {
             // var tereni = _context.Teren.Where(i => i.TeniskiKlubId == id).Select(i =>i.IdTeren).ToList();
@@ -33,7 +40,7 @@ namespace Test10.Models.Controllers
                 i.UpraviteljId,
                 i.IgracId,
               recurrenceRule = "",
-              Teren = "High"
+              Teren = i.TerenId
 
             });
             return Json(DataSourceLoader.Load(rezervacija, loadOptions));

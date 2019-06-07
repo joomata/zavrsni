@@ -51,10 +51,13 @@
             .FieldExpr("Teren")
             .AllowMultiple(false)
             .Label("Teren.NazivTerena")
-            .DataSource(new object[] {
-      new { id = "Low", text = "Low Priority", color = "#1e90ff" },
-      new { id = "High", text = "High Priority", color = "#ff9747" }
-                    });
+            .DisplayExpr("NazivTerena")
+            .ValueExpr("IdTeren")
+              .DataSource(ds => ds.Mvc()
+                .Controller("SchedulerData")
+                .Area("api")
+                .LoadAction("Tereni")                
+                );
             })
             .Height(580)
   )
